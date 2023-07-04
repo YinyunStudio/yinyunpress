@@ -1,15 +1,15 @@
 <template>
     <div>
-        <Banner
-            id="banner"
-            :press="presses"
+        <Swiper
+            class="banner"
+            :content="presses"
         />
     </div>
 </template>
 
 <script setup>
 const presses = reactive([
-    {name: "第一篇文章", description: "测试用的"},
+    {type: "", name: "第一篇文章", description: "测试用的", background: ""},
     {name: "第二篇文章", description: "测试用的"},
     {name: "第三篇文章", description: "测试用的"},
     {name: "第四篇文章", description: "测试用的"},
@@ -23,7 +23,7 @@ const presses = reactive([
 </script>
 
 <style scoped>
-    #banner {
+    .banner {
         width: 100vw;
         height: 700px;
     }
