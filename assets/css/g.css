@@ -1,0 +1,89 @@
+
+:root {
+    --view-width: 1050px;
+
+    --theme-color: rgb(68, 178, 242);
+    --font-color: #0c0c0c;
+    --bg-color: #fafafa;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+a {
+    color: unset;
+}
+
+
+input[type=text], input[type=password] {
+    border: none;
+    outline: none;
+    padding: 2px 5px;
+    --color: 225;
+    border-bottom: 2px rgb(var(--color), var(--color), var(--color)) solid;
+    transition: border 200ms;
+}
+input[type=text]:hover, input[type=password]:hover, input[type=password]:focus, input[type=text]:focus {
+    --color: 200;
+}
+
+
+button {
+    --color: #8d8d8d;
+    border: 2px solid var(--color);
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    background: var(--color);
+    color: #fff;
+    transition-duration: 200ms;
+    transition-property: border, background-color, box-shadow, transform, color, filter;
+    cursor: pointer;
+}
+button.hollowed {
+    color: #737373;
+    background: #fff;
+    border: 2px solid #c1c1c1;
+}
+button.chollowed {
+    color: var(--color);
+    background: #fff;
+}
+
+button:hover, button:focus:not(:active) {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+button.hollowed:hover, button.hollowed:focus:not(:active) {
+    color: #fff;
+    background: var(--color);
+    border: 2px solid var(--color);
+}
+button.chollowed:hover, button.chollowed:focus:not(:active) {
+    color: #fff;
+    background: var(--color);
+    border: 2px solid var(--color);
+}
+
+button:active {
+    box-shadow: none;
+    filter: brightness(0.95);
+    transform: scale(0.98);   
+}
+
+/* .page-enter-active,
+.page-leave-active {
+    transition: all 500ms;
+}
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+    filter: blur(2rem);
+} */
