@@ -56,6 +56,7 @@
         /* padding: 10px; */
         margin-left: 20px;
         font: 1em;
+        white-space: nowrap;
     }
 
     @media screen and (max-width: 500px) {

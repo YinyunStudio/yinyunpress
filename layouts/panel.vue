@@ -53,7 +53,7 @@
 <script setup>
 const subtitle = ref("")
 provide("subtitle", subtitle)
-onUpdated(() => {
+onBeforeUpdate(() => {
     subtitle.value = ""
 })
 

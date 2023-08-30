@@ -56,6 +56,9 @@
 
 
 <template>
+    <div class="box">
+        <h1>我们强烈谴责日本政府将核废水排入大海的行为！</h1>
+    </div>
     <div class="welcome box">
         <h1>{{ GreetingMessage }}</h1> 
         <h2>欢迎来到 {{ name }} Panel！</h2>
@@ -76,7 +79,7 @@ import dayjs from 'dayjs'
 definePageMeta({
     layout: "panel"
 })
-onBeforeMount(() => {
+onMounted(() => {
     inject("subtitle").value = "碗里面包！/  概览"
 })
 

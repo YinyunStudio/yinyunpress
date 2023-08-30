@@ -216,7 +216,7 @@
 
 <script setup>
 definePageMeta({
-    layout: "",
+    layout: false,
 });
 
 import sha256 from "js-sha256"

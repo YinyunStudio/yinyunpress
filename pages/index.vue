@@ -9,7 +9,7 @@
     .banner {
         width: 100%;
         height: 200px;
-        border-radius: 5px;
+        border-radius: 2px;
     }
 
     @media screen and (max-width: 290px) {

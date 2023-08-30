@@ -493,6 +493,7 @@
 
 <script setup>
 import dayjs from 'dayjs'
+import { time } from 'echarts';
 
 const props = defineProps(["content"])
 let content = JSON.parse(JSON.stringify(props.content))
@@ -583,16 +584,22 @@ function prev() {
     swiper_index.value -= 1
     back()
     direction = 2
+    clearInterval( timer.timer )
+    timer.timer = setInterval(() => {play()}, Interval)
 }
 
 function next() {
     swiper_index.value += 1
     back()
     direction = 1
+    clearInterval( timer.timer )
+    timer.timer = setInterval(() => {play()}, Interval)
 }
 
+const timer = {}
+
 onMounted(() => {
-    setInterval(() => {play()}, Interval)
+    timer.timer = setInterval(() => {play()}, Interval)
 })
 
 
