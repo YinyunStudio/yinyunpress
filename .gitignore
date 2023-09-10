@@ -87,9 +87,13 @@ web_modules/
 .next
 out
 
-# Nuxt.js build / generate output
+# Nuxt dev/build outputs
+.output
 .nuxt
-dist
+# Node dependencies
+node_modules
+# System files
+*.log
 
 # Gatsby files
 .cache/

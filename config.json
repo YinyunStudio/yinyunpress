@@ -1,0 +1,10 @@
+{
+    "key": false,
+    "db": {
+        "host": "localhost",
+        "port": "27017",
+        "database": "yinyunpress",
+        "username": false,
+        "password": false
+    }
+}

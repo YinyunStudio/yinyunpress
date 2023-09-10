@@ -1,4 +1,4 @@
-import { db } from "~/server/mongodb"
+import { db } from "../../utils/mongodb"
 
 export default defineEventHandler( async (event) => {
 

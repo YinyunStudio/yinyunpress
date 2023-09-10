@@ -1,4 +1,4 @@
-import { db } from "~/server/mongodb"
+import { db } from "../../utils/mongodb"
 import jwt from "jsonwebtoken"
 import key from "../../utils/key"
 
